@@ -1,2 +1,2 @@
 # PDE
-PDE Fundamentals and Frontier Interdisciplinary Applications
+Partial Differential Equations(PDE) Fundamentals and Frontier Interdisciplinary Applications
