@@ -68,3 +68,21 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy:.2f}')
 print('Predicted labels:', y_pred)
 print('True labels:', y_test.tolist())
+
+#进行k的交叉验证
+k_values=range(3,21)
+accuracies=[]
+
+for k in k_values:
+    y_pred=[]
+    for instance in X_test:
+        result=knn_predict(X_train,y_train,instance,k)
+        y_pred.append(result)
+    accuracy=accuracy_score(y_test,y_pred)
+    accuracies.append(accuracy)
+
+plt.figure(figsize=(10,6))
+plt.plot(k_values,accuracies,marker='o',linestyle='-',color='b')
+plt.xlabel('K Value')
+plt.ylabel('Accuracy')
+plt.show()
