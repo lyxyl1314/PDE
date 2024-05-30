@@ -1,2 +1,2 @@
-# PDE
-Partial Differential Equations(PDE) Fundamentals and Frontier Interdisciplinary Applications
+# Code for Multivariate Statistics Course
+Write the code based on mathematical principles rather than using existing Python libraries.
